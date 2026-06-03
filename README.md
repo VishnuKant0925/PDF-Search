@@ -54,23 +54,40 @@ During installation:
 
 ### 2. Clone and Install
 
+**a.** Clone the repository:
 ```bash
-git clone https://github.com/YOUR_USERNAME/PDF-Search.git
+git clone https://github.com/VishnuKant0925/PDF-Search.git
+```
+
+**b.** Go into the project folder:
+```bash
 cd PDF-Search
+```
+
+**c.** Create a virtual environment:
+```bash
 python -m venv .venv
+```
+
+**d.** Activate the virtual environment:
+```bash
 .\.venv\Scripts\Activate.ps1
+```
+> Using CMD instead of PowerShell? Run this instead: `.\.venv\Scripts\activate.bat`
+
+**e.** Install dependencies:
+```bash
 pip install -r requirements.txt
 ```
 
-> Using CMD instead of PowerShell? Replace the activate line with: `.\.venv\Scripts\activate.bat`
-
 ### 3. Run
 
+**a.** Place your scanned PDF in the project folder, then run:
 ```bash
 python ocr_pdf.py "your_file.pdf"
 ```
 
-Output → `your_file_searchable.pdf` — open it and press **Ctrl+F** to search!
+**b.** Open the output `your_file_searchable.pdf` and press **Ctrl+F** to search!
 
 ---
 
